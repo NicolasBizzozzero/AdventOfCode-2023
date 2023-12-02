@@ -1,6 +1,3 @@
-import math
-
-
 def cube_conundrum(games):
     max_values = {
         "red": 12,
