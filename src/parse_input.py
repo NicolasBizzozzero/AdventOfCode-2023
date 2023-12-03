@@ -24,4 +24,4 @@ def parse_input(path_dir_input: str, problem_number: int):
                 lines.append(line)
             return lines
         else:
-            return [word.strip() for word in fp.readlines()]
+            return [line.strip() for line in fp.readlines()]

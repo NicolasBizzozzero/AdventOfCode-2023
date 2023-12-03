@@ -3,13 +3,11 @@ import time
 from src.parse_input import parse_input
 from src.problems.day1_trebuchet import trebuchet
 from src.problems.day2_cube_conundrum import cube_conundrum
+from src.problems.day3_gear_ratios import gear_ratios
 
 
 def main():
-    problems = {
-        1: trebuchet,
-        2: cube_conundrum,
-    }
+    problems = {1: trebuchet, 2: cube_conundrum, 3: gear_ratios}
 
     for problem_number in range(1, len(problems) + 1):
         t1 = time.time()
