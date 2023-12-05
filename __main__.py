@@ -5,18 +5,24 @@ from src.problems.day1_trebuchet import trebuchet
 from src.problems.day2_cube_conundrum import cube_conundrum
 from src.problems.day3_gear_ratios import gear_ratios
 from src.problems.day4_scratchcards import scratchcards
+from src.problems.day5_give_seed_fertilizer import give_seed_fertilizer
 
 
 def main():
-    problems = {1: trebuchet, 2: cube_conundrum, 3: gear_ratios, 4: scratchcards}
+    problems = {
+        1: trebuchet,
+        2: cube_conundrum,
+        3: gear_ratios,
+        # 4: scratchcards,
+        5: give_seed_fertilizer,
+    }
 
-    for problem_number in range(1, len(problems) + 1):
+    for problem_number, problem_function in problems.items():
         t1 = time.time()
         input_data = parse_input(
             path_dir_input="inputs",
             problem_number=problem_number,
         )
-        problem_function = problems[problem_number]
         results = problem_function(input_data)
         t2 = time.time()
         print(

@@ -40,5 +40,25 @@ def parse_input(path_dir_input: str, problem_number: int):
                 ]
                 lines.append([numbers_winning, numbers_i_have])
             return lines
+        elif problem_number in (5,):
+            seeds, *maps = fp.read().split("\n\n")
+
+            seeds = list(map(int, seeds.split(": ")[1].split(" ")))
+
+            maps_cleaned = []
+            for m in maps:
+                m = m.split("map:")[1]  # Remove useless data
+                m = m.strip().split("\n")  # Split each map
+                m = [
+                    {
+                        "dest_range_start": int(line[0]),
+                        "src_range_start": int(line[1]),
+                        "range_length": int(line[2]),
+                    }
+                    for line in [data.split() for data in m]
+                ]
+                maps_cleaned.append(m)
+            return {"seeds": seeds, "almanac": maps_cleaned}
+
         else:
             return [line.strip() for line in fp.readlines()]
