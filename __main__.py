@@ -1,11 +1,12 @@
 import time
 
 from src.parse_input import parse_input
-from src.problems.day1_trebuchet import trebuchet
-from src.problems.day2_cube_conundrum import cube_conundrum
-from src.problems.day3_gear_ratios import gear_ratios
-from src.problems.day4_scratchcards import scratchcards
-from src.problems.day5_give_seed_fertilizer import give_seed_fertilizer
+from src.problems.year2023.day1_trebuchet import trebuchet
+from src.problems.year2023.day2_cube_conundrum import cube_conundrum
+from src.problems.year2023.day3_gear_ratios import gear_ratios
+from src.problems.year2023.day4_scratchcards import scratchcards
+from src.problems.year2023.day5_give_seed_fertilizer import give_seed_fertilizer
+from src.problems.year2023.day6_wait_for_it import day6_wait_for_it
 
 
 def main():
@@ -14,7 +15,8 @@ def main():
         2: cube_conundrum,
         3: gear_ratios,
         # 4: scratchcards,
-        5: give_seed_fertilizer,
+        # 5: give_seed_fertilizer,
+        6: day6_wait_for_it,
     }
 
     for problem_number, problem_function in problems.items():

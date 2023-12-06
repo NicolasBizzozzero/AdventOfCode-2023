@@ -1,9 +1,8 @@
 import math
-from pprint import pprint
 
 import tqdm
 
-from src.common import batched
+from src.common.iterators import batched
 
 
 def give_seed_fertilizer(almanac: dict):

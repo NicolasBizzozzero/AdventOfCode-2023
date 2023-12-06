@@ -1,7 +1,7 @@
 import os
 import re
 
-from src.common import batched
+from src.common.iterators import batched
 
 
 def get_path_input(path_dir_input: str, problem_number: int):
