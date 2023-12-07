@@ -59,6 +59,11 @@ def parse_input(path_dir_input: str, problem_number: int):
                 ]
                 maps_cleaned.append(m)
             return {"seeds": seeds, "almanac": maps_cleaned}
-
+        elif problem_number in (7,):
+            lines = []
+            for line in fp.readlines():
+                hand, bid = line.split(" ")
+                lines.append({"hand": hand, "bid": int(bid)})
+            return lines
         else:
             return [line.strip() for line in fp.readlines()]

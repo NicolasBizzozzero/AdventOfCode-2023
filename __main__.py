@@ -7,6 +7,7 @@ from src.problems.year2023.day3_gear_ratios import gear_ratios
 from src.problems.year2023.day4_scratchcards import scratchcards
 from src.problems.year2023.day5_give_seed_fertilizer import give_seed_fertilizer
 from src.problems.year2023.day6_wait_for_it import day6_wait_for_it
+from src.problems.year2023.day7_camel_cards import camel_cards
 
 
 def main():
@@ -16,7 +17,8 @@ def main():
         3: gear_ratios,
         # 4: scratchcards,
         # 5: give_seed_fertilizer,
-        6: day6_wait_for_it,
+        # 6: day6_wait_for_it,
+        7: camel_cards,
     }
 
     for problem_number, problem_function in problems.items():
