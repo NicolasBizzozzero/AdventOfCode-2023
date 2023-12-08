@@ -8,6 +8,7 @@ from src.problems.year2023.day4_scratchcards import scratchcards
 from src.problems.year2023.day5_give_seed_fertilizer import give_seed_fertilizer
 from src.problems.year2023.day6_wait_for_it import day6_wait_for_it
 from src.problems.year2023.day7_camel_cards import camel_cards
+from src.problems.year2023.day8_haunted_wasteland import haunted_wasteland
 
 
 def main():
@@ -19,6 +20,7 @@ def main():
         # 5: give_seed_fertilizer,
         # 6: day6_wait_for_it,
         7: camel_cards,
+        8: haunted_wasteland,
     }
 
     for problem_number, problem_function in problems.items():

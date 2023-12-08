@@ -10,3 +10,9 @@ def batched(iterable: iter, n: int):
     it = iter(iterable)
     while batch := tuple(islice(it, n)):
         yield batch
+
+
+def cycle(iterable: iter):
+    while True:
+        for element in iterable:
+            yield element

@@ -65,5 +65,18 @@ def parse_input(path_dir_input: str, problem_number: int):
                 hand, bid = line.split(" ")
                 lines.append({"hand": hand, "bid": int(bid)})
             return lines
+        elif problem_number in (8,):
+            lines = fp.readlines()
+            instructions = lines[0].strip()
+            nodes = [node.strip() for node in lines[2:]]
+            parsed_nodes = []
+            for node in nodes:
+                node = node.split(" = ")
+                node[1] = node[1][1:-1].split(", ")
+                parsed_nodes.append(node)
+            cleaned_nodes = {}
+            for node, (node_left, node_right) in parsed_nodes:
+                cleaned_nodes[node] = {"left": node_left, "right": node_right}
+            return (instructions, cleaned_nodes)
         else:
             return [line.strip() for line in fp.readlines()]
