@@ -78,5 +78,7 @@ def parse_input(path_dir_input: str, problem_number: int):
             for node, (node_left, node_right) in parsed_nodes:
                 cleaned_nodes[node] = {"left": node_left, "right": node_right}
             return (instructions, cleaned_nodes)
+        elif problem_number in (9,):
+            return [list(map(int, line.strip().split())) for line in fp.readlines()]
         else:
             return [line.strip() for line in fp.readlines()]

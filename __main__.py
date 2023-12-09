@@ -9,6 +9,7 @@ from src.problems.year2023.day5_give_seed_fertilizer import give_seed_fertilizer
 from src.problems.year2023.day6_wait_for_it import day6_wait_for_it
 from src.problems.year2023.day7_camel_cards import camel_cards
 from src.problems.year2023.day8_haunted_wasteland import haunted_wasteland
+from src.problems.year2023.day9_mirage_maintenance import mirage_maintenance
 
 
 def main():
@@ -21,6 +22,7 @@ def main():
         # 6: day6_wait_for_it,
         7: camel_cards,
         8: haunted_wasteland,
+        9: mirage_maintenance,
     }
 
     for problem_number, problem_function in problems.items():

@@ -12,6 +12,12 @@ def batched(iterable: iter, n: int):
         yield batch
 
 
+def pair_by_pair(iterable: iter) -> tuple[int, int]:
+    """Identical to itertools.pairwise"""
+    for idx in range(len(iterable) - 1):
+        yield iterable[idx], iterable[idx + 1]
+
+
 def cycle(iterable: iter):
     while True:
         for element in iterable:
