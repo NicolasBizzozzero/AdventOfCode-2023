@@ -1,15 +1,16 @@
 import time
 
 from src.parse_input import parse_input
-from src.problems.year2023.day1_trebuchet import trebuchet
-from src.problems.year2023.day2_cube_conundrum import cube_conundrum
-from src.problems.year2023.day3_gear_ratios import gear_ratios
-from src.problems.year2023.day4_scratchcards import scratchcards
-from src.problems.year2023.day5_give_seed_fertilizer import give_seed_fertilizer
-from src.problems.year2023.day6_wait_for_it import day6_wait_for_it
-from src.problems.year2023.day7_camel_cards import camel_cards
-from src.problems.year2023.day8_haunted_wasteland import haunted_wasteland
-from src.problems.year2023.day9_mirage_maintenance import mirage_maintenance
+from src.problems.year2023.day10_pipe_maze import pipe_maze
+from src.problems.year2023.day01_trebuchet import trebuchet
+from src.problems.year2023.day02_cube_conundrum import cube_conundrum
+from src.problems.year2023.day03_gear_ratios import gear_ratios
+from src.problems.year2023.day04_scratchcards import scratchcards
+from src.problems.year2023.day05_give_seed_fertilizer import give_seed_fertilizer
+from src.problems.year2023.day06_wait_for_it import day6_wait_for_it
+from src.problems.year2023.day07_camel_cards import camel_cards
+from src.problems.year2023.day08_haunted_wasteland import haunted_wasteland
+from src.problems.year2023.day09_mirage_maintenance import mirage_maintenance
 
 
 def main():
@@ -23,6 +24,7 @@ def main():
         7: camel_cards,
         8: haunted_wasteland,
         9: mirage_maintenance,
+        10: pipe_maze,
     }
 
     for problem_number, problem_function in problems.items():
