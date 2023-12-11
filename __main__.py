@@ -11,20 +11,22 @@ from src.problems.year2023.day06_wait_for_it import day6_wait_for_it
 from src.problems.year2023.day07_camel_cards import camel_cards
 from src.problems.year2023.day08_haunted_wasteland import haunted_wasteland
 from src.problems.year2023.day09_mirage_maintenance import mirage_maintenance
+from src.problems.year2023.day11_cosmic_expansion import cosmic_expansion
 
 
 def main():
     problems = {
-        1: trebuchet,
-        2: cube_conundrum,
-        3: gear_ratios,
+        # 1: trebuchet,
+        # 2: cube_conundrum,
+        # 3: gear_ratios,
         # 4: scratchcards,
         # 5: give_seed_fertilizer,
         # 6: day6_wait_for_it,
-        7: camel_cards,
-        8: haunted_wasteland,
-        9: mirage_maintenance,
-        10: pipe_maze,
+        # 7: camel_cards,
+        # 8: haunted_wasteland,
+        # 9: mirage_maintenance,
+        # 10: pipe_maze,
+        11: cosmic_expansion,
     }
 
     for problem_number, problem_function in problems.items():
