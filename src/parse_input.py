@@ -80,5 +80,14 @@ def parse_input(path_dir_input: str, problem_number: int):
             return (instructions, cleaned_nodes)
         elif problem_number in (9,):
             return [list(map(int, line.strip().split())) for line in fp.readlines()]
+        elif problem_number in (12,):
+            lines = []
+            for line in fp.readlines():
+                springs, damaged_springs = line.split(" ")
+                damaged_springs = list(map(int, damaged_springs.strip().split(",")))
+                lines.append((springs, damaged_springs))
+            return lines
+        elif problem_number in (13,):
+            return list(map(lambda line: line.split(), fp.read().split("\n\n")))
         else:
             return [line.strip() for line in fp.readlines()]

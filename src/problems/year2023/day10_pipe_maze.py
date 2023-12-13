@@ -58,8 +58,8 @@ def pipe_maze(sketch: list[str]):
 
 
 def is_enclosed(tile: tuple[int, int], path_loop: dict, sketch: list[str]):
-    """Follows the Even-Odd rule. Draw a line outside the loop and count the number of walls it crosses.
-    If it crosses an odd number of walls, then the tile is enclosed inside the loop.
+    """Follows the Even-Odd rule. Draw any line starting from the tile and going outside the loop and count the number
+    of walls it crosses. If it crosses an odd number of walls, then the tile is enclosed inside the loop.
     """
     winding_number = 0
 

@@ -12,6 +12,8 @@ from src.problems.year2023.day07_camel_cards import camel_cards
 from src.problems.year2023.day08_haunted_wasteland import haunted_wasteland
 from src.problems.year2023.day09_mirage_maintenance import mirage_maintenance
 from src.problems.year2023.day11_cosmic_expansion import cosmic_expansion
+from src.problems.year2023.day12_hot_springs import hot_springs
+from src.problems.year2023.day13_point_of_incidence import point_of_incidence
 
 
 def main():
@@ -26,7 +28,9 @@ def main():
         # 8: haunted_wasteland,
         # 9: mirage_maintenance,
         # 10: pipe_maze,
-        11: cosmic_expansion,
+        # 11: cosmic_expansion,
+        # 12: hot_springs,
+        13: point_of_incidence
     }
 
     for problem_number, problem_function in problems.items():
