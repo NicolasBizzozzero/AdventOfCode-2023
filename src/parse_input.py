@@ -89,5 +89,7 @@ def parse_input(path_dir_input: str, problem_number: int):
             return lines
         elif problem_number in (13,):
             return list(map(lambda line: line.split(), fp.read().split("\n\n")))
+        elif problem_number in (15,):
+            return fp.read().strip().split(",")
         else:
             return [line.strip() for line in fp.readlines()]

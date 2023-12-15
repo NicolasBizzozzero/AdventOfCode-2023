@@ -1,4 +1,4 @@
-from typing import Union, Iterable, Callable
+from typing import Union
 
 from src.common.distances import hamming
 

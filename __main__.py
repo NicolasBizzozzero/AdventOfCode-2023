@@ -14,6 +14,10 @@ from src.problems.year2023.day09_mirage_maintenance import mirage_maintenance
 from src.problems.year2023.day11_cosmic_expansion import cosmic_expansion
 from src.problems.year2023.day12_hot_springs import hot_springs
 from src.problems.year2023.day13_point_of_incidence import point_of_incidence
+from src.problems.year2023.day14_parabolic_reflector_dish import (
+    parabolic_reflector_dish,
+)
+from src.problems.year2023.day15_lens_library import lens_library
 
 
 def main():
@@ -30,7 +34,9 @@ def main():
         # 10: pipe_maze,
         # 11: cosmic_expansion,
         # 12: hot_springs,
-        13: point_of_incidence
+        # 13: point_of_incidence,
+        # 14: parabolic_reflector_dish,
+        15: lens_library,
     }
 
     for problem_number, problem_function in problems.items():
