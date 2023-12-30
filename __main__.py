@@ -1,3 +1,4 @@
+import sys
 import time
 
 from src.parse_input import parse_input
@@ -18,9 +19,14 @@ from src.problems.year2023.day14_parabolic_reflector_dish import (
     parabolic_reflector_dish,
 )
 from src.problems.year2023.day15_lens_library import lens_library
+from src.problems.year2023.day16_the_floor_will_be_lava import the_floor_will_be_lava
+from src.problems.year2023.day17_clumsy_crucible import clumsy_crucible
+from src.problems.year2023.day18_lavaduct_lagoon import lavaduct_lagoon
 
 
 def main():
+    sys.setrecursionlimit(1_000_000)
+
     problems = {
         # 1: trebuchet,
         # 2: cube_conundrum,
@@ -36,7 +42,10 @@ def main():
         # 12: hot_springs,
         # 13: point_of_incidence,
         # 14: parabolic_reflector_dish,
-        15: lens_library,
+        # 15: lens_library,
+        # 16: the_floor_will_be_lava,
+        # 17: clumsy_crucible,
+        18: lavaduct_lagoon,
     }
 
     for problem_number, problem_function in problems.items():

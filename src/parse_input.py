@@ -91,5 +91,22 @@ def parse_input(path_dir_input: str, problem_number: int):
             return list(map(lambda line: line.split(), fp.read().split("\n\n")))
         elif problem_number in (15,):
             return fp.read().strip().split(",")
+        elif problem_number in (17,):
+            lines = []
+            for line in fp.readlines():
+                lines.append([int(c) for c in line.strip()])
+            return lines
+        elif problem_number in (18,):
+            lines = []
+            for line in fp.readlines():
+                line = line.strip().split(" ")
+                lines.append(
+                    {
+                        "dig_direction": line[0],
+                        "dig_depth": int(line[1]),
+                        "color": line[2].replace("(", "").replace(")", ""),
+                    }
+                )
+            return lines
         else:
             return [line.strip() for line in fp.readlines()]
